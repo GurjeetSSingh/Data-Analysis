@@ -1,4 +1,4 @@
-<img width="1439" alt="Screenshot 2024-07-30 233508" src="https://github.com/user-attachments/assets/fc420558-d6f0-4ed3-9ef6-a96ff1c5ff06">![MasterHead](https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif)
+![MasterHead](https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif)
 <h1 align="center">Hi 👋, I'm Gurjeet Singh</h1>
 <h3 align="center">Focused on Innovation, Technology, and Continuous Learning</h3>
 <img align="right" alt="Coding" width="400" src="https://camo.githubusercontent.com/2366b34bb903c09617990fb5fff4622f3e941349e846ddb7e73df872a9d21233/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966">
