@@ -1,4 +1,4 @@
-![MasterHead](https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif)
+<img width="1439" alt="Screenshot 2024-07-30 233508" src="https://github.com/user-attachments/assets/fc420558-d6f0-4ed3-9ef6-a96ff1c5ff06">![MasterHead](https://user-images.githubusercontent.com/74038190/241765440-80728820-e06b-4f96-9c9e-9df46f0cc0a5.gif)
 <h1 align="center">Hi 👋, I'm Gurjeet Singh</h1>
 <h3 align="center">Focused on Innovation, Technology, and Continuous Learning</h3>
 <img align="right" alt="Coding" width="400" src="https://camo.githubusercontent.com/2366b34bb903c09617990fb5fff4622f3e941349e846ddb7e73df872a9d21233/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966">
@@ -267,4 +267,90 @@ The following deliverables have been produced as part of this project:
 - **Cost Analysis Report**: A breakdown of the costs involved in running AWS security, governance, and monitoring services, ensuring the platform remains cost-effective while maintaining high standards.
 
 ---
+</br>
+</br>
+<h2 align="center">Diagnostic Analysis of Project 3: HR Task Completion Using AWS Glue</h2>
 
+## Background:
+The HR department at UCW requires a robust system to monitor and evaluate recruitment processes. This diagnostic phase focuses on understanding inefficiencies in hiring by calculating the **Average Days to Fill (ADF)** job positions. The goal is to identify bottlenecks and provide actionable insights to improve the recruitment process over time.
+
+---
+
+## Dataset:
+The dataset consists of **HR job postings** and related details such as hiring dates and offer statuses. The data is stored securely using **AWS S3**, and AWS Glue is used for processing. Key fields include:
+- **JobID**: Unique identifier for each job posting.
+- **Position**: Job title of the open position.
+- **Department**: Department responsible for the hire.
+- **PostingDate**: Date when the job was posted.
+- **HireDate**: Date when the job position was filled.
+- **Status**: Current status of the job position.
+- **Source**: Recruitment source (e.g., internal, job board).
+- **OfferExtended**: Indicator if an offer was extended to the candidate.
+- **OfferAccepted**: Indicator if the offer was accepted.
+- **AcceptanceDate**: Date when the offer was accepted.
+
+---
+
+## Methodology:
+This project follows a **diagnostic analysis process**, aiming to uncover inefficiencies in HR recruitment by focusing on the **Average Days to Fill (ADF)** metric.
+
+### **Step 1: Data Ingestion Using AWS Glue**
+- The HR job postings dataset is ingested from **AWS S3** using **AWS Glue**.
+  ![Screenshot 2024-07-18 234359](https://github.com/user-attachments/assets/7c26a401-bc8e-47a1-819e-45fb64ebf981)
+  ![Screenshot 2024-07-18 234244](https://github.com/user-attachments/assets/7a1c1950-52fb-47fd-9176-ae761fe38ece)
+
+- A Glue job is created to extract the data, perform transformations, and load it into an S3 bucket for further processing.
+  
+
+### **Step 2: Data Transformation**
+- Using **AWS Glue**, a column called `Days to Fill` is generated, representing the number of days taken from `PostingDate` to `HireDate` for each job posting.
+- A **group-by operation** is performed based on the hiring year (extracted from `HireDate`), calculating the **Average Days to Fill (ADF)** for each year.
+  <img width="1439" alt="Screenshot 2024-07-30 233508" src="https://github.com/user-attachments/assets/1dfdc528-b7f8-4465-9dab-bb248386df9a">
+
+
+### **Step 3: Data Storage**
+- The transformed output is written back to **AWS S3** in CSV format. This output will contain the **ADF** values for each hiring year, allowing HR to track recruitment efficiency over time.
+
+### **Step 4: Data Visualization**
+- The output from Glue is imported into **AWS QuickSight** for visualization.
+- **Interactive dashboards** are created to show trends in hiring efficiency, helping HR teams visualize and identify any bottlenecks in recruitment.
+<img width="1440" alt="Screenshot 2024-08-03 230408" src="https://github.com/user-attachments/assets/5d3d518b-73c5-4a9a-aa55-60f29415762c">
+<img width="1439" alt="Screenshot 2024-07-30 2333578" src="https://github.com/user-attachments/assets/e67b1822-fd05-41c3-b99b-a7f1573bb762">
+
+
+---
+
+## Tools and Technologies:
+- **AWS S3**: For scalable and secure data storage.
+- **AWS Glue**: For running ETL (Extract, Transform, Load) jobs.
+- **AWS Glue Data Catalog**: For metadata and schema management.
+- **AWS QuickSight**: For creating interactive dashboards and visualizations.
+- **AWS IAM**: For managing access control and ensuring secure operations.
+
+---
+
+## Timeline:
+- **Week 1**: Data ingestion and setup of AWS Glue ETL pipeline.
+- **Week 2**: Transformation of the data to calculate **ADF** and load the processed data back into S3.
+- **Week 3**: Creation of AWS QuickSight dashboards for visualization and insights.
+- **Week 4**: Review and presentation of diagnostic insights to the HR team.
+
+---
+
+## Insights and Findings:
+The diagnostic analysis provided several actionable insights:
+- **Longer Hiring Times in Specific Departments**: Some departments had consistently higher **ADF** values, indicating potential inefficiencies in their recruitment processes.
+- **Seasonal Trends in Hiring**: The data revealed seasonal patterns, with certain months showing a significantly higher **ADF**, suggesting a potential need for better resource allocation during peak times.
+- **Improved Hiring Processes Over Time**: Recent data shows a reduction in **ADF**, indicating improvements in the recruitment process over the past few years.
+
+---
+
+## Deliverables:
+- **CSV Output**: Contains the **Average Days to Fill (ADF)** for each hiring year, stored in S3.
+  
+- **QuickSight Dashboard**: A visual dashboard that tracks recruitment efficiency and allows HR management to diagnose inefficiencies in their hiring processes.
+
+---
+
+## Conclusion:
+By leveraging **AWS Glue** and **AWS QuickSight**, this diagnostic analysis successfully identified inefficiencies in UCW HR's recruitment process. The insights provided will enable the HR team to optimize recruitment timelines and ensure more efficient hiring in the future.
