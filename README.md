@@ -137,9 +137,11 @@ The following key deliverables were produced as part of this project, each contr
 - **Recommendations for Process Improvement**: Based on the analysis, we have provided a set of actionable recommendations aimed at optimizing the building permit issuance process and ensuring more balanced urban development across Vancouver's districts.
   
 These deliverables not only provide actionable insights for the present but also lay the foundation for future scalability and more efficient city planning workflows.
+
 </br>
 </br>
 </br>
+
 <h2 align="center">Diagnostic Analysis of Project 2: Data Protection, Governance, and Monitoring for Vancouver's Data Analytic Platform</h2>
 
 ## Background:
