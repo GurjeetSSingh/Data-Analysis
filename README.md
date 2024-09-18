@@ -28,7 +28,7 @@
 
 ## DAP Diagram:
 Below is the **Data Analytic Platform (DAP)** diagram, which illustrates the high-level architecture and process flow that this project will follow to implement the data analytic platform for the City of Vancouver.
-![image](https://github.com/user-attachments/assets/5b0c992b-914d-425b-95af-f8477d6eb6b8)
+![image](https://github.com/user-attachments/assets/2537b0c3-91d6-435f-9d5e-5a17a1f89d48)
 
 ## Project Description:
 Perform a descriptive analysis of building permits in Vancouver using AWS services to ingest, process, and analyze data efficiently, focusing on the **Project Value** of properties for the years 2023 and 2024.
@@ -58,41 +58,45 @@ The dataset includes building permit data sourced from the [Vancouver Open Data 
 
 #### **Data Collection and Preparation**
 - The dataset was downloaded in **Excel format** and ingested into **AWS S3** for secure storage.
+![1](https://github.com/user-attachments/assets/b9ce982d-f5e6-4094-9ee6-1c435202fc16)
+![2](https://github.com/user-attachments/assets/6a7d1afd-bb36-4505-99b1-ea5539b8b437)
+![3](https://github.com/user-attachments/assets/386ad6ab-3b4d-4181-9c2e-a7de891762ef)
+![4](https://github.com/user-attachments/assets/f5b813df-f4d6-421c-847d-87b065ce5119)
 
-- **![image](https://github.com/user-attachments/assets/ba161ef1-522b-492b-91e3-8df19430ff5e)**:
--**![image](https://github.com/user-attachments/assets/a6e78ac9-3413-4e98-a824-899c6cdb4903)**:
--**![image](https://github.com/user-attachments/assets/f7f03ab8-f074-4d8c-bba8-07d1826953a6)**:
   Screenshot showing the **S3 bucket** and uploaded dataset. This demonstrates that the data has been properly ingested into AWS.
 
 #### **Data Cleaning and Structuring**
 - Data was cleaned using **AWS Glue DataBrew** to address missing values and structure the dataset for analysis.
+![image9](https://github.com/user-attachments/assets/c3f049f3-bcf5-4a28-bc5f-0355558f180f)
+![image10](https://github.com/user-attachments/assets/1173ef2e-b904-4908-8021-0a7f1dd29586)
+![image11](https://github.com/user-attachments/assets/95bf2904-b9a9-4832-8fb5-4fc868eb8ec3)
 
-- **![image](https://github.com/user-attachments/assets/99ae1342-5642-4ef2-8ea2-1ba7a4ef755b)**:
-- **![image](https://github.com/user-attachments/assets/3b127043-4ad9-4ab0-9f89-31248dbb7ee3)**:
-- **![image](https://github.com/user-attachments/assets/ec32a4bf-e0f0-4aa9-81d9-e91a41047803)**:
   Screenshot from **AWS Glue DataBrew** showing the data cleaning process, such as handling missing values or structuring the dataset.
 
 #### **Data Storage and Pipeline**
 - Data was stored in an **AWS S3 bucket** for easy access and processing.
 
-- A data pipeline was designed using **AWS Glue** to automate the steps.
+- A data pipeline was designed using **draw.io and AWS Glue** to automate the steps.
+![image7](https://github.com/user-attachments/assets/f5d256dc-41b3-4b2d-827d-9fb193c9efd2)
+![image8](https://github.com/user-attachments/assets/c5bfea3c-7243-4595-bc14-0e57b4596326)
+![image12](https://github.com/user-attachments/assets/fa3c99ea-ed96-40ef-b845-e96b6509c807)
 
-- **![image](https://github.com/user-attachments/assets/cac8b608-7a9d-4d77-9c95-e07d0d0a9932)**:
-- **![image](https://github.com/user-attachments/assets/0ec88a4e-1b0e-455e-a03c-beea15feff9f)**: 
   If available, include a screenshot of the **AWS Glue jobs** running or the pipeline creation process. This would highlight the data transformation workflow.
 
 #### **Data Analysis**
 - Descriptive statistics (mean, median, mode) were calculated using **AWS Athena**.
 - Queries focused on summarizing the **Project Value** across different time periods.
 
-- **![image](https://github.com/user-attachments/assets/46569a2a-dcf5-4e68-9431-d56426f911cf)**:  
+![image13](https://github.com/user-attachments/assets/97ca6120-a075-4c94-bd0d-2fc619e6f27f)
+
   Screenshot of **AWS Athena** showing query results, including any statistics you've generated like **mean or median** of project values.
 
 #### **Data Visualization**
 - Visualizations were created to highlight trends in project values and permit issuance.
 
-- **![image](https://github.com/user-attachments/assets/e2ea20ce-64c1-43a1-96d5-1f4feed14270)**:
-- **![image](https://github.com/user-attachments/assets/030056c8-9fb3-46b5-9f0a-2b4c3ac4465f)**:
+![image14](https://github.com/user-attachments/assets/089a03f6-d289-4d21-9575-f65a69dbff56)
+![image15](https://github.com/user-attachments/assets/a4baca17-0d65-494f-88f8-7bda1f1684bb)
+
 
 ### 5. **Tools and Technologies**
 - **AWS S3**: For data storage.
@@ -138,111 +142,129 @@ These deliverables not only provide actionable insights for the present but also
 </br>
 <h2 align="center">Diagnostic Analysis of Project 2: Data Protection, Governance, and Monitoring for Vancouver's Data Analytic Platform</h2>
 
+## Background:
+The City of Vancouver has initiated a migration to AWS to implement a robust data analytic platform (DAP). This diagnostic phase focuses on ensuring that the platform is secure, well-governed, and consistently monitored. This involves applying encryption and security policies, governance frameworks, and real-time performance monitoring.
 ## DAP Diagram:
 Below is the **Data Analytic Platform (DAP)** diagram, which outlines the architecture for Vancouver's AWS-based data platform. This phase focuses on data protection, governance, and monitoring.
 
-![DAP Diagram](https://github.com/user-attachments/assets/a1c74d90-b764-466b-8168-2c7ed40a6dc7)
+![image2](https://github.com/user-attachments/assets/b2b06222-37eb-4f34-95f6-4169c9c35ae6)
+---
+
+## Dataset:
+The dataset consists of operational data related to the **building permits issued by the City of Vancouver**. The data is stored securely using AWS S3 with encryption, governance rules, and replication rules applied. Key features include:
+- **Permit Number**: Unique identifier for each permit issued.
+- **Project Type**: The type of building project (e.g., residential, commercial).
+- **Permit Issue Date**: The date on which the permit was issued.
+- **Project Value**: The financial value of the project.
+- **Location**: Geographic details of the project site.
+- **Contractor Information**: Data about the contractor responsible for the project.
 
 ---
 
-## Project Description:
-This project expands on the Data Analytic Platform (DAP) designed for the City of Vancouver, focusing on three critical components:
-- **Data Protection**: Ensuring the security of data stored and processed in AWS.
-- **Data Governance**: Implementing policies and governance controls to manage and track data usage.
-- **Data Monitoring**: Setting up continuous monitoring of the system to track performance and identify any potential issues.
+## Methodology:
+This project focuses on ensuring **Data Protection**, **Data Governance**, and **Data Monitoring** using AWS services. Here’s how each of these steps was implemented:
 
-### Objective:
-The primary goal of this project is to establish robust mechanisms for securing, governing, and monitoring the Data Analytic Platform to ensure it meets the operational and compliance requirements of the City of Vancouver.
+### **Step 15: Data Protection**
+- **Approach**: 
+    - Implemented encryption using **AWS KMS** (Key Management Service) to create encryption and decryption keys.
+    - Configured the keys for S3 bucket encryption to ensure that all stored data is encrypted at rest.
+    - Applied **bucket replication rules** to replicate data across regions for disaster recovery and failover support.
+    - Set up S3 bucket policies and IAM roles to control access and ensure that only authorized personnel can read or write data.
 
----
-
-## Diagnostic Analysis of Vancouver's DAP
-
-### 1. **Project Title**
-**Implementing Data Protection, Governance, and Monitoring for Vancouver's DAP**
-
-### 2. **Steps Implemented**
-
-#### **Step 15: Data Protection**
-The **Data Protection** step involves securing the AWS environment by implementing IAM (Identity and Access Management) roles and policies, ensuring that only authorized personnel have access to sensitive data and resources.
-
-- **Screenshot to include here**:  
-  A screenshot of the **AWS IAM** roles, policies, or other security configurations that you set up. (Put this as Screenshot 1.)
-
-#### **Step 16: Data Governance**
-**Data Governance** is established by implementing rules and policies for data management, access control, and monitoring. This ensures that data is being used in compliance with regulations and organizational policies.
-
-- **Screenshot to include here**:  
-  A screenshot showing **AWS Config** or **CloudTrail** being set up to track data governance policies or auditing data activities. (Put this as Screenshot 2.)
-
-#### **Step 17: Data Monitoring**
-For **Data Monitoring**, AWS CloudWatch is used to continuously monitor system performance, track resource utilization, and trigger alerts for any anomalies or failures in the DAP infrastructure.
-
-- **Screenshot to include here**:  
-  A screenshot from **AWS CloudWatch**, showing performance metrics or logs that are monitored. (Put this as Screenshot 3.)
-
----
-
-### 3. **Architecture Analysis**
-As part of the evaluation of the Data Analytic Platform (DAP) architecture, several pillars of AWS operational excellence were reviewed, including:
-
-- **Operational Excellence**: The platform is designed with high availability and scalability in mind, ensuring that it can handle varying loads.
-- **Security**: Security best practices are followed, such as the implementation of IAM roles and encryption, to ensure data integrity and confidentiality.
-- **Reliability**: By monitoring system performance through CloudWatch, the platform ensures reliable data processing without downtime.
-- **Performance Efficiency**: AWS auto-scaling and resource optimization techniques ensure efficient use of cloud resources.
-- **Cost Optimization**: AWS services are used in a cost-effective manner, utilizing the pricing calculator to keep operational costs low.
-- **Sustainability**: The platform is designed with AWS’s sustainability practices in mind, using efficient data processing to minimize the environmental impact of cloud operations.
-
----
-
-### 4. **Screenshots from AWS Services**
-Here are the relevant screenshots from the various steps:
-
-- **Data Protection using IAM:**
-
-  ![Screenshot 1](https://github.com/your_username/your_repo_name/blob/main/path_to_screenshot_1.png)
-
-- **Data Governance with AWS Config or CloudTrail:**
-
-  ![Screenshot 2](https://github.com/your_username/your_repo_name/blob/main/path_to_screenshot_2.png)
-
-- **Monitoring with AWS CloudWatch:**
-
-  ![Screenshot 3](https://github.com/your_username/your_repo_name/blob/main/path_to_screenshot_3.png)
-
----
-
-### 5. **Tools and Technologies**
-- **AWS IAM**: For managing user permissions and securing data.
-- **AWS Config**: For tracking configuration changes and compliance with governance policies.
-- **AWS CloudTrail**: For auditing and logging data access and usage.
-- **AWS CloudWatch**: For monitoring system performance and alerting.
+- **Screenshot**: Screenshot of KMS keys, bucket policies, and replication rules applied to the bucket for protection.
+   ![image1](https://github.com/user-attachments/assets/45f470e8-41ed-4fb0-91cd-ec9af48a4610)
+   ![image2](https://github.com/user-attachments/assets/11219440-2a4c-4767-908d-112a1f403b5b)
+   ![image3](https://github.com/user-attachments/assets/d6ba91f4-e166-4b5d-9821-a65ddca97793)
   
+### **Step 16: Data Governance**
+- **Approach**:
+    - Used **AWS Config** to track all changes in bucket configurations and applied compliance rules to ensure that security and governance policies are being followed.
+    - Set up **AWS CloudTrail** to log all actions taken on the platform, ensuring full audit trails for data access and usage.
+    - Established governance policies and monitoring systems that allow administrators to oversee data access and activity effectively.
+
+- **Screenshot**: Screenshot of AWS Config rules and CloudTrail logs showing governance in action.
+  ![image4](https://github.com/user-attachments/assets/4f5b918d-0d7b-4ada-8c3e-93a0eeea1d8f)
+  ![image5](https://github.com/user-attachments/assets/dfdb8140-ea9f-406b-8e96-11e0c1a48da1)
+  ![image6](https://github.com/user-attachments/assets/e9d5d762-3fed-4e03-a50b-6097af6eb933)
+  ![image7](https://github.com/user-attachments/assets/fa3d26cc-d892-4298-9c86-b1a86babe883)
+  ![image8](https://github.com/user-attachments/assets/22cd9ee0-d162-4b26-a188-e0a3e9b23990)
+  ![image9](https://github.com/user-attachments/assets/37b20b25-d9f5-43ff-ae2d-fd6733b49cca)
+
+
+### **Step 17: Data Monitoring**
+- **Approach**:
+    - Configured **AWS CloudWatch** to continuously monitor system performance and track metrics such as CPU usage, memory utilization, and data processing times.
+    - Set up **AWS SNS (Simple Notification Service)** for real-time alerts. If any thresholds (e.g., high resource usage or security breaches) are crossed, notifications are sent automatically.
+    - Used CloudWatch dashboards to visualize the platform’s performance in real time and generate automated reports.
+
+- **Screenshot**: Screenshot of CloudWatch dashboard and SNS alert system showing real-time monitoring.
+  ![image10](https://github.com/user-attachments/assets/31af6061-b132-4e1b-84a1-f88674ac0e85)
+  ![image11](https://github.com/user-attachments/assets/0b733710-a6a5-439c-a695-d32dc1d27143)
+  ![image12](https://github.com/user-attachments/assets/729c05a7-6d67-4e5e-a990-2761c3a39974)
+  ![image13](https://github.com/user-attachments/assets/434f54e3-135a-4175-b3fe-1d81c3b55d7c)
+  ![image14](https://github.com/user-attachments/assets/189b64df-d302-41ca-b44d-be91143745b4)
+
 ---
 
-### 6. **Insights and Findings**
-The implementation of data protection, governance, and monitoring resulted in several valuable insights that improve the reliability and security of the City of Vancouver's DAP:
+## Timeline:
+- **Week 1-2**: Initial setup of S3 buckets with encryption, IAM roles, and bucket policies.
+- **Week 3-4**: Implementation of replication rules, KMS keys, and data governance using AWS Config and CloudTrail.
+- **Week 5-6**: Setup of CloudWatch monitoring and SNS alert systems for real-time performance tracking.
+- **Week 7**: Final review and integration of the entire protection, governance, and monitoring systems into the DAP.
 
-- **Enhanced Data Security**: With IAM roles and policies implemented, only authorized personnel can access critical data and resources, significantly reducing the risk of data breaches.
+---
+
+## DAP Architecture Analysis:
+### Based on AWS Well-Architected Framework:
+The architecture for the Vancouver DAP was evaluated on six key pillars of AWS Well-Architected Framework:
+
+- **Operational Excellence**: The DAP automates critical processes, including encryption and data replication, ensuring that it operates smoothly without manual intervention.
   
-- **Improved Data Governance**: The use of AWS Config and CloudTrail enabled detailed auditing and governance of data access, providing a full audit trail for compliance purposes. This ensures that the City of Vancouver can meet regulatory requirements while maintaining transparency.
-
-- **Proactive Monitoring**: With the implementation of AWS CloudWatch, the system is continuously monitored for performance bottlenecks and security threats. Alerts are triggered in real-time to ensure any issues are quickly addressed, improving overall system reliability.
-
-These findings underscore the importance of robust security, governance, and monitoring for long-term operational excellence.
+- **Security**: AWS KMS and IAM roles were used to enforce strong encryption and access control policies, ensuring that all sensitive data is protected against unauthorized access.
+  
+- **Reliability**: Bucket replication rules ensure data redundancy, and the use of CloudWatch ensures that the platform remains highly reliable, with real-time performance alerts.
+  
+- **Performance Efficiency**: The platform uses efficient data storage and retrieval mechanisms, including optimized bucket policies and monitoring services that help minimize resource usage during peak times.
+  
+- **Cost Optimization**: AWS Pricing Calculator was used to ensure that the costs of storage, replication, and monitoring remain within budget, while CloudWatch optimizes resource usage based on real-time demand.
+  
+- **Sustainability**: AWS services allow for highly sustainable data processing and storage, reducing the environmental impact of the platform’s operation by utilizing cloud-based, energy-efficient services.
 
 ---
 
-### 7. **Deliverables**
+## Tools and Technologies:
+- **AWS S3**: For scalable and secure data storage.
+- **AWS Glue**: For ETL (Extract, Transform, Load) operations and building the data catalog.
+- **AWS Athena**: For running SQL queries to explore and analyze datasets directly from S3.
+- **AWS CloudWatch**: For usage visualization and alerting via SNS.
+- **AWS SNS**: For alerting when services exceed usage limits or performance thresholds.
+- **AWS IAM**: For user management and data access control.
+- **AWS KMS**: For creating encryption and decryption keys to secure sensitive data.
+- **AWS Config**: For tracking configuration changes and ensuring compliance with governance policies.
+- **AWS CloudTrail**: For logging and auditing all actions taken on the platform.
+
+---
+
+## Insights and Findings:
+This diagnostic analysis revealed several critical insights into the security, governance, and monitoring aspects of the City of Vancouver's data platform:
+
+- **Enhanced Data Security**: The implementation of KMS encryption and IAM roles ensures that only authorized users can access sensitive data, reducing the risk of unauthorized access.
+  
+- **Comprehensive Governance**: With AWS Config and CloudTrail, all actions are logged, and governance policies are continuously enforced, ensuring compliance with security standards and regulations.
+
+- **Proactive Monitoring and Alerting**: AWS CloudWatch and SNS enable real-time monitoring of system performance, ensuring that any anomalies are detected and resolved swiftly. This reduces downtime and improves the platform's reliability.
+
+These insights support the overall goal of providing a secure, well-governed, and continuously monitored data platform for the City of Vancouver.
+
+---
+
+## Deliverables:
 The following deliverables have been produced as part of this project:
 
-- **Data Protection Documentation**: A full report detailing the security measures implemented using AWS IAM, including roles and permissions.
-  
-- **Data Governance Report**: A governance report that outlines the policies and rules implemented via AWS Config and CloudTrail to manage data access and usage.
+- **Data Protection Report**: A detailed document outlining how AWS KMS and IAM were implemented to secure sensitive data.
+- **Data Governance and Compliance Report**: A comprehensive report generated via AWS Config and CloudTrail, showing all actions taken on the platform for governance and auditing.
+- **Monitoring and Alerting Dashboard**: A CloudWatch-based monitoring dashboard integrated with SNS for real-time alerts and system performance tracking.
+- **Cost Analysis Report**: A breakdown of the costs involved in running AWS security, governance, and monitoring services, ensuring the platform remains cost-effective while maintaining high standards.
 
-- **Monitoring Dashboard**: A live monitoring dashboard using AWS CloudWatch, showing real-time performance metrics and logs for the DAP, which city officials can use for ongoing operations.
-
-- **Cost Analysis for Security and Monitoring Services**: A breakdown of the costs involved in running AWS security, governance, and monitoring services, ensuring the platform remains cost-effective while maintaining high standards of security.
-
-These deliverables equip the City of Vancouver with the tools and insights needed to manage their data infrastructure efficiently, securely, and sustainably.
+---
 
